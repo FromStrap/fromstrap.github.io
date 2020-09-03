@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- 'stable'
+cache:
+  directories:
+    - "node_modules"
+script:
+  - npm run build
+deploy:
+  provider: pages
+  github-token: $GITHUB_TOKEN  # definir na variavel de ambiente do Travis.
+  skip-cleanup: true
+  keep-history: true
+  fqdn: fromstrap.com
+  local-dir: public
+  on:
+    tag: true
