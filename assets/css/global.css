@@ -146,6 +146,22 @@ html {
 }
 
 
+.web-card {
+    background: url('../images/icons/web.svg') no-repeat center; background-size: 200px;
+}
+
+.mobile-card {
+    background: url('../images/icons/mobile.svg') no-repeat center; background-size: 200px;
+}
+
+.responsive-card {
+    background: url('../images/icons/responsive.svg') no-repeat center; background-size: 200px;
+}
+
+.seo-card {
+    background: url('../images/icons/seo.svg') no-repeat center; background-size: 200px;
+}
+
 aside {
     left: 100%;
     position: fixed;
@@ -420,3 +436,4 @@ footer > div {
         bottom: 4%;
     }
 }
+

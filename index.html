@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Structured</title>
 </head>
 
@@ -29,12 +29,12 @@
     </aside>
     <header>
         <nav class="navbar container">
-            <img class="navbar-logo" src="./assets/images/Logo.svg" alt="Logo">
+            <img class="navbar-logo" src="<%=require('./assets/images/Logo.svg').default%>" alt="Logo">
             <ul class="navbar-menu">
-                <li class="navbar-menu-item"><a href="#services"><img src="./assets/images/icons/services.svg">
+                <li class="navbar-menu-item"><a href="#services"><img src="./src/images/icons/services.svg">
                         <p>Serviços</p>
                     </a></li>
-                <li class="navbar-menu-item"><a href="#about"><img src="./assets/images/icons/about.svg">
+                <li class="navbar-menu-item"><a href="#about"><img src="./src/images/icons/about.svg">
                         <p>Sobre</p>
                     </a></li>
                 <li class="navbar-menu-item"><button class="button--primary">Contato</button></li>
@@ -79,24 +79,24 @@
             <div>
                 <ul>
                     <li
-                        style="background: url('./assets/images/icons/web.svg') no-repeat center; background-size: 200px;">
+                        class="web-card">
                         <h1 class="label-large">Aplicações Web</h1>
                         <p class="label-medium">Lidamos com a criação e manutenção de aplicações Web, sendo elas de
                             gerencia ou de uso geral.</p>
                     </li>
                     <li
-                        style="background: url('./assets/images/icons/mobile.svg') no-repeat center; background-size: 200px;">
+                        class="mobile-card">
                         <h1 class="label-large">Aplicações Mobile</h1>
                         <p class="label-medium">Também lidamos com tecnologia Mobile nativa, criando aplicações para
                             Android e iOS</p>
                     </li>
                     <li
-                        style="background: url('./assets/images/icons/responsive.svg') no-repeat center; background-size: 200px;">
+                        class="responsive-card">
                         <h1 class="label-large">Paginas Responsívas</h1>
                         <p class="label-medium">Criamos paginas reponsívas que se adptam em qualquer tipo de tela.</p>
                     </li>
                     <li
-                        style="background: url('./assets/images/icons/seo.svg') no-repeat center; background-size: 200px;">
+                        class="seo-card">
                         <h1 class="label-large">SEO</h1>
                         <p class="label-medium">Aprimoramos sua pagina para melhor posicionamento dos motores de
                             pesquisas da Internet.</p>
@@ -220,7 +220,7 @@
 
         </div>
     </footer>
-    <script src="./assets/js/index.js"></script>
+    <script src="./bundle.js"></script>
 </body>
 
 </html>
