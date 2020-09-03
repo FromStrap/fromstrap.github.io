@@ -145,10 +145,54 @@ html {
     stroke: var(--color-third);
 }
 
+
+aside {
+    left: 100%;
+    position: fixed;
+    z-index: 9999999;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: #2A2D2D;
+    transition: 1s;
+}
+
+aside .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    height: 100%;
+}
+
+aside h3 {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+aside form {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+aside form input, textarea {
+    margin-bottom: 20px;
+}
+
+
 /* Inputs */
 label {
     padding-left: 3px;
     margin-bottom: 2px;
+    font-size: 0.9rem;
 }
 
 input {
@@ -156,10 +200,16 @@ input {
     height: 45px;
     background: var(--color-third);
     border: 0;
-    border-radius: 8px;
+    font-family: 'Rubik';
+    font-size: 0.8rem;
+    border-radius: 5px;
+    padding: 0 10px;
 }
 
 textarea {
+    padding: 0 10px;
+    font-family: 'Rubik';
+    font-size: 0.8rem;
     padding: 5px;
     background: var(--color-third);
     border: 0;
@@ -341,7 +391,15 @@ footer > div {
     }
 
     .navbar-menu-item:last-child {
-        display: none;
+        position: fixed;
+        right: 10px;
+        height: 30px;
+        bottom: 70px;
+        border-radius: 100%;
+    }
+
+    .navbar-menu-item:last-child > button {
+        background: var(--color-primary);
     }
 
     .navbar-menu-item:nth-last-child(2) {
@@ -349,7 +407,16 @@ footer > div {
     }
 
 
-    /* card */
+    footer {
+        display: none;
 
+    }
 
+}
+
+@media screen and (max-width: 380px) {
+    aside h3 {
+        top: auto;
+        bottom: 4%;
+    }
 }
