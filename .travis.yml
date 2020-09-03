@@ -14,4 +14,4 @@ deploy:
   fqdn: fromstrap.com
   local-dir: public
   on:
-    tag: true
+    tags: true
