@@ -1,3 +1,5 @@
+import '../css/global.css'
+
 // Contact menu
 
 const $ = document.querySelector.bind(document);
