@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Rubik:wght@400;500&display=swap");
+@import "./font-awesome.css";
 @import "./reset.css";
 
 
@@ -113,7 +114,7 @@ html {
     margin-right: 45px;
 }
 
-.navbar-menu-item img {
+.navbar-menu-item i {
     display: none;
 }
 
@@ -141,8 +142,9 @@ html {
     margin: 10px 0 20px 0;
 }
 
-.card-icons svg * {
-    stroke: var(--color-third);
+.card-icons a {
+    color: var(--color-third);
+    font-size: 1.5rem;
 }
 
 
@@ -400,9 +402,10 @@ footer > div {
 
     }
 
-    .navbar-menu-item img {
+    .navbar-menu-item i {
         align-self: center;
-        width: 20px;
+        margin-bottom: 3px;
+        font-size: 1rem;
         display: initial;
     }
 

@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Structured</title>
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <title>FromStrap</title>
 </head>
 
 <body>
@@ -13,7 +13,8 @@
         <div class="container">
             <h3>Fechar</h3>
             <h1 class="header-medium">Entre em contato</h1>
-            <p class="paragraph-mediu">Ficou interessado em um de nosso serviços? Deixe uma mensagem que te respondemos o mais rápido possível.</p>
+            <p class="paragraph-mediu">Ficou interessado em um de nosso serviços? Deixe uma mensagem que te respondemos
+                o mais rápido possível.</p>
             <form action="#">
                 <label for="name">Nome</label>
                 <input name="name" placeholder="Flavio Dino" type="text">
@@ -22,7 +23,8 @@
                 <label for="phone">Telefone</label>
                 <input name="phone" placeholder="11 99999999" type="text">
                 <label for="msg">Mensagem</label>
-                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Nos diga o que te interessou."></textarea>
+                <textarea name="msg" id="msg" cols="30" rows="10"
+                    placeholder="Nos diga o que te interessou."></textarea>
                 <button class="button--primary">Enviar</button>
             </form>
         </div>
@@ -31,10 +33,10 @@
         <nav class="navbar container">
             <img class="navbar-logo" src="<%=require('./assets/images/Logo.svg').default%>" alt="Logo">
             <ul class="navbar-menu">
-                <li class="navbar-menu-item"><a href="#services"><img src="./src/images/icons/services.svg">
+                <li class="navbar-menu-item"><a href="#services"><i class="fa fa-handshake-o" aria-hidden="true"></i>
                         <p>Serviços</p>
                     </a></li>
-                <li class="navbar-menu-item"><a href="#about"><img src="./src/images/icons/about.svg">
+                <li class="navbar-menu-item"><a href="#about"><i class="fa fa-address-card-o" aria-hidden="true"></i>
                         <p>Sobre</p>
                     </a></li>
                 <li class="navbar-menu-item"><button class="button--primary">Contato</button></li>
@@ -78,25 +80,21 @@
             </div>
             <div>
                 <ul>
-                    <li
-                        class="web-card">
+                    <li class="web-card">
                         <h1 class="label-large">Aplicações Web</h1>
                         <p class="label-medium">Lidamos com a criação e manutenção de aplicações Web, sendo elas de
                             gerencia ou de uso geral.</p>
                     </li>
-                    <li
-                        class="mobile-card">
+                    <li class="mobile-card">
                         <h1 class="label-large">Aplicações Mobile</h1>
                         <p class="label-medium">Também lidamos com tecnologia Mobile nativa, criando aplicações para
                             Android e iOS</p>
                     </li>
-                    <li
-                        class="responsive-card">
+                    <li class="responsive-card">
                         <h1 class="label-large">Paginas Responsívas</h1>
                         <p class="label-medium">Criamos paginas reponsívas que se adptam em qualquer tipo de tela.</p>
                     </li>
-                    <li
-                        class="seo-card">
+                    <li class="seo-card">
                         <h1 class="label-large">SEO</h1>
                         <p class="label-medium">Aprimoramos sua pagina para melhor posicionamento dos motores de
                             pesquisas da Internet.</p>
@@ -129,21 +127,27 @@
                         possam de alguma forma melhorar meu cotidiano e também a de quem me cerca.
                     </p>
                     <div class="card-icons">
-                        <a href=""><svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M15.5799 23.4019V19.3817C15.6189 18.8863 15.552 18.3883 15.3836 17.9209C15.2153 17.4534 14.9493 17.0271 14.6035 16.6704C17.8653 16.3068 21.2934 15.0706 21.2934 9.39867C21.2931 7.9483 20.7352 6.55356 19.7352 5.50312C20.2087 4.23421 20.1753 2.83165 19.6417 1.58679C19.6417 1.58679 18.4159 1.22321 15.5799 3.12424C13.199 2.47895 10.6892 2.47895 8.30825 3.12424C5.47229 1.22321 4.24649 1.58679 4.24649 1.58679C3.71293 2.83165 3.67945 4.23421 4.153 5.50312C3.14548 6.56136 2.58701 7.9687 2.59478 9.42983C2.59478 15.0602 6.02286 16.2964 9.28473 16.7015C8.94296 17.0547 8.67938 17.4759 8.51114 17.9376C8.3429 18.3994 8.27377 18.8914 8.30825 19.3817V23.4019M8.30825 20.2854C3.11419 21.8436 3.11419 17.6884 1.03656 17.169L8.30825 20.2854Z"
-                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg></a>
-                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="currentcolor" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
-                                <path
-                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                                </path>
-                                <rect x="2" y="9" width="4" height="12"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg></a>
+                        <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </a>
+                        <a href=""><i class="fa fa-github-square" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h1 class="label-large">Washington Junior</h1>
+                        <p class="label-medium">Web Development & DevOps Engineer</p>
+                    </div>
+                    <p class="paragraph-medium card-text"> Apaixonado por tecnologia, estou sempre procurando novos
+                        desafios para cumprir.
+                        Sou desenvolvedor Javascript e trabalho com rotinas DevOps, utilizando ferramentas como Ansible,
+                        Docker, Jenkins e afins.
+                    </p>
+                    <div class="card-icons">
+                        <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </a>
+                        <a href=""><i class="fa fa-github-square" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="card">
@@ -158,50 +162,10 @@
                         possam de alguma forma melhorar meu cotidiano e também a de quem me cerca.
                     </p>
                     <div class="card-icons">
-                        <a href=""><svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M15.5799 23.4019V19.3817C15.6189 18.8863 15.552 18.3883 15.3836 17.9209C15.2153 17.4534 14.9493 17.0271 14.6035 16.6704C17.8653 16.3068 21.2934 15.0706 21.2934 9.39867C21.2931 7.9483 20.7352 6.55356 19.7352 5.50312C20.2087 4.23421 20.1753 2.83165 19.6417 1.58679C19.6417 1.58679 18.4159 1.22321 15.5799 3.12424C13.199 2.47895 10.6892 2.47895 8.30825 3.12424C5.47229 1.22321 4.24649 1.58679 4.24649 1.58679C3.71293 2.83165 3.67945 4.23421 4.153 5.50312C3.14548 6.56136 2.58701 7.9687 2.59478 9.42983C2.59478 15.0602 6.02286 16.2964 9.28473 16.7015C8.94296 17.0547 8.67938 17.4759 8.51114 17.9376C8.3429 18.3994 8.27377 18.8914 8.30825 19.3817V23.4019M8.30825 20.2854C3.11419 21.8436 3.11419 17.6884 1.03656 17.169L8.30825 20.2854Z"
-                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg></a>
-                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
-                                <path
-                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                                </path>
-                                <rect x="2" y="9" width="4" height="12"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg></a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
-                        <h1 class="label-large">Washington Junior</h1>
-                        <p class="label-medium">Web Development & DevOps Engineer</p>
-                    </div>
-                    <p class="paragraph-medium card-text">Um profissional dinâmico, dedicado e proativo, sempre a
-                        procura de novos
-                        desafios.
-                        Criar e executar soluções é o meu hobbie favorito, estou sempre a procura por ideias novas que
-                        possam de alguma forma melhorar meu cotidiano e também a de quem me cerca.
-                    </p>
-                    <div class="card-icons">
-                        <a href=""><svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M15.5799 23.4019V19.3817C15.6189 18.8863 15.552 18.3883 15.3836 17.9209C15.2153 17.4534 14.9493 17.0271 14.6035 16.6704C17.8653 16.3068 21.2934 15.0706 21.2934 9.39867C21.2931 7.9483 20.7352 6.55356 19.7352 5.50312C20.2087 4.23421 20.1753 2.83165 19.6417 1.58679C19.6417 1.58679 18.4159 1.22321 15.5799 3.12424C13.199 2.47895 10.6892 2.47895 8.30825 3.12424C5.47229 1.22321 4.24649 1.58679 4.24649 1.58679C3.71293 2.83165 3.67945 4.23421 4.153 5.50312C3.14548 6.56136 2.58701 7.9687 2.59478 9.42983C2.59478 15.0602 6.02286 16.2964 9.28473 16.7015C8.94296 17.0547 8.67938 17.4759 8.51114 17.9376C8.3429 18.3994 8.27377 18.8914 8.30825 19.3817V23.4019M8.30825 20.2854C3.11419 21.8436 3.11419 17.6884 1.03656 17.169L8.30825 20.2854Z"
-                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg></a>
-                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
-                                <path
-                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                                </path>
-                                <rect x="2" y="9" width="4" height="12"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg></a>
+                        <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </a>
+                        <a href=""><i class="fa fa-github-square" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -220,7 +184,7 @@
 
         </div>
     </footer>
-    <script src="./bundle.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
