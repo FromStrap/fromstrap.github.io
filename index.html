@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/global.css">
-    <title>Structured</title>
+    <link rel="icon" href="./assets/images/favicon.png" type="image/gif"> 
+    <title>FromStrap</title>
 </head>
 
 <body>
     <aside>
         <div class="container">
-            <h3>Fechar</h3>
+            <h3><button class="button--primary">Fechar</button></h3>
             <h1 class="header-medium">Entre em contato</h1>
             <p class="paragraph-mediu">Ficou interessado em um de nosso serviços? Deixe uma mensagem que te respondemos o mais rápido possível.</p>
-            <form action="#">
+            <form action="#" method="POST">
                 <label for="name">Nome</label>
                 <input name="name" placeholder="Flavio Dino" type="text">
                 <label for="mail">Email</label>
@@ -28,8 +29,8 @@
         </div>
     </aside>
     <header>
-        <nav class="navbar container">
-            <img class="navbar-logo" src="./assets/images/Logo.svg" alt="Logo">
+        <nav id="nav" class="navbar container">
+            <a href="#nav" rel="noopener noreferrer"><img class="navbar-logo" src="./assets/images/Logo.svg" alt="Logo"></a>
             <ul class="navbar-menu">
                 <li class="navbar-menu-item"><a href="#services"><img src="./assets/images/icons/services.svg">
                         <p>Serviços</p>
@@ -119,35 +120,6 @@
             <div>
                 <div class="card">
                     <div>
-                        <h1 class="label-large">Washington Junior</h1>
-                        <p class="label-medium">Web Development & DevOps Engineer</p>
-                    </div>
-                    <p class="paragraph-medium card-text">Um profissional dinâmico, dedicado e proativo, sempre a
-                        procura de novos
-                        desafios.
-                        Criar e executar soluções é o meu hobbie favorito, estou sempre a procura por ideias novas que
-                        possam de alguma forma melhorar meu cotidiano e também a de quem me cerca.
-                    </p>
-                    <div class="card-icons">
-                        <a href=""><svg width="23" height="25" viewBox="0 0 23 25" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M15.5799 23.4019V19.3817C15.6189 18.8863 15.552 18.3883 15.3836 17.9209C15.2153 17.4534 14.9493 17.0271 14.6035 16.6704C17.8653 16.3068 21.2934 15.0706 21.2934 9.39867C21.2931 7.9483 20.7352 6.55356 19.7352 5.50312C20.2087 4.23421 20.1753 2.83165 19.6417 1.58679C19.6417 1.58679 18.4159 1.22321 15.5799 3.12424C13.199 2.47895 10.6892 2.47895 8.30825 3.12424C5.47229 1.22321 4.24649 1.58679 4.24649 1.58679C3.71293 2.83165 3.67945 4.23421 4.153 5.50312C3.14548 6.56136 2.58701 7.9687 2.59478 9.42983C2.59478 15.0602 6.02286 16.2964 9.28473 16.7015C8.94296 17.0547 8.67938 17.4759 8.51114 17.9376C8.3429 18.3994 8.27377 18.8914 8.30825 19.3817V23.4019M8.30825 20.2854C3.11419 21.8436 3.11419 17.6884 1.03656 17.169L8.30825 20.2854Z"
-                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg></a>
-                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="currentcolor" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
-                                <path
-                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                                </path>
-                                <rect x="2" y="9" width="4" height="12"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg></a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
                         <h1 class="label-large">Yago Crispim</h1>
                         <p class="label-medium">Web Development</p>
                     </div>
@@ -155,13 +127,13 @@
                         aperfeiçoar o que se sei e aberto para adquirir e testar novos conhecimentos.
                     </p>
                     <div class="card-icons">
-                        <a href=""><svg width="23" height="25" viewBox="0 0 23 25" fill="none"
+                        <a href="https://github.com/YagoCrispim"><svg width="23" height="25" viewBox="0 0 23 25" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M15.5799 23.4019V19.3817C15.6189 18.8863 15.552 18.3883 15.3836 17.9209C15.2153 17.4534 14.9493 17.0271 14.6035 16.6704C17.8653 16.3068 21.2934 15.0706 21.2934 9.39867C21.2931 7.9483 20.7352 6.55356 19.7352 5.50312C20.2087 4.23421 20.1753 2.83165 19.6417 1.58679C19.6417 1.58679 18.4159 1.22321 15.5799 3.12424C13.199 2.47895 10.6892 2.47895 8.30825 3.12424C5.47229 1.22321 4.24649 1.58679 4.24649 1.58679C3.71293 2.83165 3.67945 4.23421 4.153 5.50312C3.14548 6.56136 2.58701 7.9687 2.59478 9.42983C2.59478 15.0602 6.02286 16.2964 9.28473 16.7015C8.94296 17.0547 8.67938 17.4759 8.51114 17.9376C8.3429 18.3994 8.27377 18.8914 8.30825 19.3817V23.4019M8.30825 20.2854C3.11419 21.8436 3.11419 17.6884 1.03656 17.169L8.30825 20.2854Z"
                                     stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg></a>
-                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        <a href="https://www.linkedin.com/in/yago-crispim-66b01619b/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
                                 <path
@@ -184,13 +156,42 @@
                         possam de alguma forma melhorar meu cotidiano e também a de quem me cerca.
                     </p>
                     <div class="card-icons">
-                        <a href=""><svg width="23" height="25" viewBox="0 0 23 25" fill="none"
+                        <a href="https://github.com/washingtonj"><svg width="23" height="25" viewBox="0 0 23 25" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M15.5799 23.4019V19.3817C15.6189 18.8863 15.552 18.3883 15.3836 17.9209C15.2153 17.4534 14.9493 17.0271 14.6035 16.6704C17.8653 16.3068 21.2934 15.0706 21.2934 9.39867C21.2931 7.9483 20.7352 6.55356 19.7352 5.50312C20.2087 4.23421 20.1753 2.83165 19.6417 1.58679C19.6417 1.58679 18.4159 1.22321 15.5799 3.12424C13.199 2.47895 10.6892 2.47895 8.30825 3.12424C5.47229 1.22321 4.24649 1.58679 4.24649 1.58679C3.71293 2.83165 3.67945 4.23421 4.153 5.50312C3.14548 6.56136 2.58701 7.9687 2.59478 9.42983C2.59478 15.0602 6.02286 16.2964 9.28473 16.7015C8.94296 17.0547 8.67938 17.4759 8.51114 17.9376C8.3429 18.3994 8.27377 18.8914 8.30825 19.3817V23.4019M8.30825 20.2854C3.11419 21.8436 3.11419 17.6884 1.03656 17.169L8.30825 20.2854Z"
                                     stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg></a>
-                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        <a href="https://www.linkedin.com/in/washington-junior-7136a8101/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="currentcolor" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h1 class="label-large">Victor Martins</h1>
+                        <p class="label-medium">Web Development & Database engineer</p>
+                    </div>
+                    <p class="paragraph-medium card-text">Um profissional dinâmico, dedicado e proativo, sempre a
+                        procura de novos
+                        desafios.
+                        Criar e executar soluções é o meu hobbie favorito, estou sempre a procura por ideias novas que
+                        possam de alguma forma melhorar meu cotidiano e também a de quem me cerca.
+                    </p>
+                    <div class="card-icons">
+                        <a href="https://github.com/PsychoRoy"><svg width="23" height="25" viewBox="0 0 23 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.5799 23.4019V19.3817C15.6189 18.8863 15.552 18.3883 15.3836 17.9209C15.2153 17.4534 14.9493 17.0271 14.6035 16.6704C17.8653 16.3068 21.2934 15.0706 21.2934 9.39867C21.2931 7.9483 20.7352 6.55356 19.7352 5.50312C20.2087 4.23421 20.1753 2.83165 19.6417 1.58679C19.6417 1.58679 18.4159 1.22321 15.5799 3.12424C13.199 2.47895 10.6892 2.47895 8.30825 3.12424C5.47229 1.22321 4.24649 1.58679 4.24649 1.58679C3.71293 2.83165 3.67945 4.23421 4.153 5.50312C3.14548 6.56136 2.58701 7.9687 2.59478 9.42983C2.59478 15.0602 6.02286 16.2964 9.28473 16.7015C8.94296 17.0547 8.67938 17.4759 8.51114 17.9376C8.3429 18.3994 8.27377 18.8914 8.30825 19.3817V23.4019M8.30825 20.2854C3.11419 21.8436 3.11419 17.6884 1.03656 17.169L8.30825 20.2854Z"
+                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a>
+                        <a href="https://www.linkedin.com/in/victor-martins-71468b153/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
                                 <path
@@ -207,7 +208,7 @@
 
     <footer>
         <div class="container">
-            <p class="label-small">contato@fromstrap.com</p>
+            <p class="label-small"><a class="mail" href="mailto:contato@fromstrap.com">contato@fromstrap.com</a></p>
             <div>
                 <p class="label-small">Todos os diretos reservados</p>
                 <!-- <p class="label-small">Icons made by <a href="https://www.flaticon.com/authors/monkik"
