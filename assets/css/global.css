@@ -130,14 +130,20 @@ html {
     border-radius: 4px;
     outline: none;
     border: none;
+    color: #fff;
 }
 
 .button--primary:hover {
     cursor: pointer;
 }
 
-
 /* Card */
+#about .card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 .card-text {
     margin: 10px 0 20px 0;
 }
@@ -358,6 +364,13 @@ footer > div {
     color: var(--color-third);
 }
 
+/* 
+    Footer
+*/
+.mail {
+    text-decoration: none;
+    color: #fff;
+}
 
 
 @media screen and (max-width: 767px) { 
