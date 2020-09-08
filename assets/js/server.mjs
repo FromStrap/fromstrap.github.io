@@ -1,14 +1,19 @@
 import express from 'express'
 import bodyParser from 'body-parser'
 import nodemailer from 'nodemailer'
+import cors from 'cors'
 
 const app = express()
-app.use(express.static('.'))
+// app.use(express.static('.'))
 app.use(express.json())
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
-
-
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*')
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
+  app.use(cors())
+  next()
+})
 // Routes
 app.post('/form', (req, res) => {
 
@@ -35,15 +40,13 @@ app.post('/form', (req, res) => {
 
   transporter.sendMail(mailOps, (error, data) => {
     if (error) {
-      res.json({"Status": "Error", "Error": error})
+      res.json({code: 200, message: 'Erro ao enviar o email'})
     } else {
-      res.json({"Status": "Sent"})
+      res.json({Code: 502, message: 'Email enviado'})
     }
   })
 
 })
-
-
 
 app.listen(8081, () => {
   console.log('Server rodando')
