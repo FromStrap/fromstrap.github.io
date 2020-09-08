@@ -4,6 +4,12 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+// import webpack from 'webpack'
+// import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+// import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin'
+// import TerserPlugin from 'terser-webpack-plugin'
+// import HtmlWebpackPlugin from 'html-webpack-plugin'
+
 module.exports = {
     mode: 'production',
     entry: './assets/js/index.js',
