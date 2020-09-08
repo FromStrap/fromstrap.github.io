@@ -205,6 +205,7 @@ aside form {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    justify-content: center;
 }
 
 aside form input, textarea {
@@ -237,6 +238,22 @@ textarea {
     padding: 5px;
     background: var(--color-third);
     border: 0;
+    border-radius: 8px;
+}
+
+.span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    display: none;
+    text-align: center;
+    background-color: #DF3636;
+    width: 40%;
+    padding: 10px;
+    margin-top: 10px;
     border-radius: 8px;
 }
 

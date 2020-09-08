@@ -15,7 +15,7 @@
             <h3><button class="button--primary">Fechar</button></h3>
             <h1 class="header-medium">Entre em contato</h1>
             <p class="paragraph-mediu">Ficou interessado em um de nosso serviços? Deixe uma mensagem que te respondemos o mais rápido possível.</p>
-            <form action="http://localhost:8081/form" method="POST">
+            <form name="mailForm">
                 <label for="name">Nome</label>
                 <input name="name" placeholder="Flavio Dino" type="text">
                 <label for="mail">Email</label>
@@ -23,9 +23,11 @@
                 <label for="phone">Telefone</label>
                 <input name="phone" placeholder="11 99999999" type="text">
                 <label for="msg">Mensagem</label>
-                <textarea name="msg" id="msg" cols="30" rows="10"
-                    placeholder="Nos diga o que te interessou."></textarea>
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Nos diga o que te interessou."></textarea>
                 <button class="button--primary">Enviar</button>
+                <div class="span">
+                    <span>Preencha todos os campos</span>
+                </div>
             </form>
         </div>
     </aside>
@@ -215,8 +217,11 @@
 
         </div>
     </footer>
+
     <script src="./assets/js/index.js"></script>
-    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/axios.js"></script>
+    <script src="./assets/js/ajax.js"></script>
+
 </body>
 
 </html>
