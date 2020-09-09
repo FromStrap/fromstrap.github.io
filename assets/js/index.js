@@ -1,9 +1,9 @@
 import '../css/global.scss'
 
-// Contact menu
-
 const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
 
+// Contact menu
 function isActive() {
     let isActive = $("aside")    
     !isActive.style.left || isActive.style.left == "100%" 
@@ -13,5 +13,5 @@ function isActive() {
 }
 
 $(".navbar-menu li:last-child").addEventListener("click", isActive);
-$("aside h3").addEventListener("click", isActive)
+$("aside i").addEventListener("click", isActive)
 

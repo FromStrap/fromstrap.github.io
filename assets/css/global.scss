@@ -2,7 +2,8 @@
 @import "./reset.scss";
 
 // BreakPoints
-$break-tablet: 767px;
+$break-laptop: 1125px;
+$break-tablet: 768px;
 $break-mobile: 380px;
 
 // Colors
@@ -120,9 +121,14 @@ html {
 
 /* Card */
 .card {
+  flex: 1 1 250px;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: center;
+  border: 1px solid $color-secundary;
+  padding: 40px;
+  margin: 5px;
+  color: $color-third;
 
   .card-text {
     margin: 10px 0 20px 0;
@@ -164,10 +170,10 @@ textarea {
 
 // Sections
 section {
-  width: 100%;
   height: 100vh;
 
-  &:first-child {
+  &:first-child, 
+  &:last-child {
     height: 80vh;
   }
 }
@@ -181,6 +187,8 @@ aside {
   height: 100vh;
   background: #2a2d2d;
   transition: 1s;
+  overflow-y: scroll;
+  
 
   .container {
     display: flex;
@@ -189,15 +197,19 @@ aside {
     justify-content: center;
     align-items: center;
     max-width: 800px;
-    height: 100%;
+    height: fit-content;    
   }
 
   i {
     position: absolute;
     right: 0;
-    top: 40px;
+    top: 30px;
     color: $color-primary;
     cursor: pointer;
+  }
+
+  h1 {
+    margin-top: 60px;
   }
 
   form {
@@ -205,7 +217,7 @@ aside {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin: 20px 0;
   }
 
   form input,
@@ -305,18 +317,7 @@ aside {
       flex-wrap: wrap;
       justify-content: center;
       width: 100%;
-      margin-top: 30px;
-
-      > div {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border: 1px solid $color-secundary;
-        padding: 50px;
-        margin: 5px;
-        color: $color-third;
-      }
+      margin: 30px 0;
     }
   }
 }
@@ -336,10 +337,16 @@ footer {
     a {
       color: $color-third;
     }
+
+    p:last-child {
+      font-size: 0.5rem;
+    }
+
   }
+
 }
 
-@media screen and (max-width: $break-tablet) {
+@media screen and (max-width: $break-laptop) {
   section {
     height: 100%;
     margin: 50px 0;
@@ -347,11 +354,24 @@ footer {
 
     &:first-child {
       height: 100%;
-      margin: 0;
       padding: 0;
+      margin: 0;
     }
-  }
 
+    &:last-child {
+      height: 100%;
+      padding-top: 50px;
+    }
+
+  }
+}
+
+
+@media screen and (max-width: $break-tablet) {
+  section:last-child {
+    margin-bottom: 55px;
+  }
+ 
   /* Navbar */
   .navbar {
     height: 90px;
@@ -408,11 +428,23 @@ footer {
   footer {
     display: none;
   }
+
+
+
 }
+
+
 
 @media screen and (max-width: $break-mobile) {
   aside h3 {
     top: auto;
     bottom: 4%;
+  }
+}
+
+
+@media screen and (min-height: 1080px) {
+  section {
+    height: 100%;
   }
 }
