@@ -16,16 +16,16 @@
             <h1 class="header-medium">Entre em contato</h1>
             <p class="paragraph-medium">Ficou interessado em um de nosso serviços? Deixe uma mensagem que te respondemos
                 o mais rápido possível.</p>
-            <form action="#" method="POST">
+            <form class="contact__send" action="#">
                 <label for="name">Nome</label>
-                <input name="name" placeholder="Flavio Dino" type="text">
+                <input class="contact__input" name="name" placeholder="Qual o seu nome?" type="text" required type="text">
                 <label for="mail">Email</label>
-                <input name="mail" placeholder="exemplo@fromstrap.com" type="text">
+                <input class="contact__input" name="mail" placeholder="Deixe seu email para retornamos o contato" type="email" required>
                 <label for="phone">Telefone</label>
-                <input name="phone" placeholder="11 99999999" type="text">
+                <input class="contact__input" name="phone" placeholder="ex: 11 99999999" type="number" required>
                 <label for="msg">Mensagem</label>
-                <textarea name="msg" id="msg" cols="30" rows="10"
-                    placeholder="Nos diga o que te interessou."></textarea>
+                <textarea class="contact__input" name="msg" id="msg" cols="30" rows="10"
+                    placeholder="Faça uma breve descrição do que te interessou."></textarea>
                 <button class="button--primary">Enviar</button>
             </form>
         </div>
